@@ -29,13 +29,26 @@ body {
 }
 
 
-.signin-btn {
-  background-color: #e50914;
+.language-signin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 3;
+}
+
+.language-signin select,
+.language-signin button {
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.language-signin button {
+  background-color: red;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -80,63 +93,55 @@ body {
   font-size: 1rem;
 }
 
+/* Email Form */
 .email-form {
+  margin-top: 24px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  color: transparent;
 }
 
-.email-from input[type="email"]  {
-  padding: 10px;
-  width: 300px;
-  max-width: 100%;
+.email-form input[type="email"] {
+  padding: 16px;
+  width: 60%;
+  max-width: 400px;
   border: none;
-  border-radius: 2px;
-  background-color: transparent;
+  outline: none;
+  font-size: 1rem;
   
-
 }
 
 .email-form button {
-  padding: 10px 20px;
-  background-color:red;
-  color:white;
+  padding: 16px 24px;
+  background-color: red;
+  color: white;
   border: none;
-  font-weight: bold;
+  font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 2px;
+  
+}
+.trending-section {
+  padding: 20px;
+  text-align: center;
 }
 
-/* Trending Section */
-.trending {
-  padding: 40px 20px;
-  background-color: #141414;
-}
-
-.trending h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.trending-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .trending-row {
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.movie-card {
-  min-width: 200px;
-  flex: 0 0 auto;
-  text-align: center;
-}
-
-.movie-card img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.movie-card p {
-  margin-top: 10px;
-  font-size: 1rem;
+.trending-poster {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
 }
