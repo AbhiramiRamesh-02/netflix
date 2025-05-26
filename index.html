@@ -11,7 +11,14 @@
  
   <div class="header">
     <img src="assets/vdo/n logo.png" class="logo" alt="Netflix Logo" />
-    <button class="signin-btn">Sign In</button>
+     <div class="overlay"></div>
+  <div class="language-signin">
+    <select>
+      <option>English</option>
+      <option>Hindi</option>
+    </select>
+    <button onclick="location.href='signin.html'">Sign In</button>
+  </div>
    
   </div>
 
@@ -22,32 +29,22 @@
       <h1>Unlimited movies, TV shows, and more</h1>
       <h2>starts at Rs149.cancel at anytime.</h2>
       <p><h4>Ready to watch? Enter your email to create or restart your membership.</h4></p>
-      <div class="email-from">
-        <input type="email" placeholder="Email address" /><button>Get Started</button>
-        
+      <form class="email-form" action="signup.html">
+      <input type="email" placeholder="Email address" required />
+      <button type="submit">Get Started ></button>
+    </form>
       </div>
     </div>
   </div>
 
   
-  <section class="trending">
+ <div class="trending-section">
     <h2>Trending Now</h2>
     <div class="trending-row">
-      <div class="movie-card">
-        <img src="assets/vdo/1.webp" alt="Movie 1" />
-        
-      </div>
-      <div class="movie-card">
-        <img src="assets/vdo/2.webp" alt="Movie 2" />
-       
-      </div>
-      <div class="movie-card">
-        <img src="assets/vdo/3.webp" alt="Movie 3" />
-        
-      </div>
-      <div class="movie-card">
-        <img src="assets/vdo/4.webp" alt="Movie 4" />
-        
+      <img src="assets/1.webp" alt="Movie 1" class="trending-poster">
+      <img src="assets/2.webp" alt="Movie 2" class="trending-poster">
+      <img src="assets/3.webp" alt="Movie 3" class="trending-poster">
+      <img src="assets/5.webp" alt="Movie 4" class="trending-poster">
       </div>
     </div>
   </section>
