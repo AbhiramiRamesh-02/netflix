@@ -121,27 +121,26 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   
-}
-.trending-section {
-  padding: 20px;
-  text-align: center;
+}.trending-section {
+  padding: 40px 20px;
 }
 
 .trending-section h2 {
-  font-size: 20px;
+  text-align: left;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .trending-row {
   display: flex;
-  justify-content: center;
+  overflow-x: auto;
   gap: 10px;
-  flex-wrap: wrap;
+  padding-bottom: 10px;
 }
 
 .trending-poster {
-  width: 120px;
-  height: 180px;
-  object-fit: cover;
+  height: 150px;
   border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
 }
