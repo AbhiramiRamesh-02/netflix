@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  color: red;
+  hieght:80vh;
+}
+
+.logo {
+ 
+  width:150px;
+}
+
+
+.signin-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 90vh;
+  background-image: url('assets/vdo/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 35%;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-from input[type="email"]  {
+  padding: 10px;
+  width: 300px;
+  max-width: 100%;
+  border: none;
+  border-radius: 2px;
+  background-color: transparent;
+  
+
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color:red;
+  color:white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Trending Section */
+.trending {
+  padding: 40px 20px;
+  background-color: #141414;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.trending-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.movie-card {
+  min-width: 200px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
